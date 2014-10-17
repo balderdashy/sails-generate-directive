@@ -42,8 +42,9 @@ module.exports = {
       return util.format('<%s></%s>', htmlizedDirectiveName, htmlizedDirectiveName);
     })(scope.htmlizedDirectiveName);
 
-    // If a module name was not provided as `--module`, default to 'App'.
-    scope.module = scope.module || 'App';
+    // If an angular module name was not provided as `--angular-module`,
+    // default to 'App'.
+    scope.angularModule = scope['angular-module'] || 'App';
 
     cb();
   },
