@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-directive",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "sails generate directive",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "balderdashy",
   "license": "MIT",
   "dependencies": {
-  	"lodash": "~2.4.0"
+    "lodash": "~2.4.0"
   },
   "sailsGenerator": {
     "type": "directive",
