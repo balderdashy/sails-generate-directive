@@ -35,8 +35,8 @@ module.exports = {
     scope.filename = scope.htmlizedDirectiveName + '.directive.js';
 
     // Path to directives dir within the project
-    // (set using --directory or --directives-directory)
-    scope.directory = scope.directory||scope['directives-directory']||'assets/js/directives';
+    // (set using --directives-directory)
+    scope.directivesDirectory = scope['directives-directory']||'assets/js/directives';
 
     scope.htmlExample = (function build_html_example(htmlizedDirectiveName) {
       return util.format('<%s></%s>', htmlizedDirectiveName, htmlizedDirectiveName);
@@ -57,7 +57,7 @@ module.exports = {
 
   targets: {
 
-    './:directory/:filename': { template: 'new-directive.gen' },
+    './:directivesDirectory/:filename': { template: 'new-directive.gen' },
 
   },
 
