@@ -1,0 +1,41 @@
+angular.module('<%= module %>')
+.directive('<%= camelCasedDirectiveName %>', [
+
+/**
+ * Module Dependencies
+ */
+
+         '$compile',
+function( $compile ) {
+
+
+  /**
+   * <%= camelCasedDirectiveName %>
+   *
+   * @class        {angular.directive}
+   * @module       <%= module %>
+   * @description  Some reusable UI logic that can be linked
+   *               to one or more HTML elements.
+   *
+   * ==========================================
+   * Usage:
+   * ==========================================
+   *
+   * <%= htmlExample %>
+   */
+
+  return {
+    restrict: 'E',
+
+    scope: {
+      // someScopeVariable: '='
+    },
+
+    link: function($scope, $el){
+
+      alert('linked "<%=camelCasedDirectiveName%>", a brand new directive located at `assets/js/directives/<%=filename%>`');
+
+    }
+  };
+}]);
+
