@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-directive",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "sails generate directive",
   "main": "index.js",
   "scripts": {
